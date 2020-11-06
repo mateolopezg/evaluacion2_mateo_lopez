@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_act">
+
+    <ViewFlipper
+        android:id="@+id/slider"
+        android:layout_width="391dp"
+        android:layout_height="416dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ViewFlipper>
+
+    <TableLayout
+        android:layout_width="407dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imgBtnClientes"
+                    android:layout_width="202dp"
+                    android:layout_height="66dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/perfil_men" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnCash"
+                    android:layout_width="205dp"
+                    android:layout_height="67dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imgBtnClientes"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/dinero_men" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="Gestionar Clientes"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgBtnClientes"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtnClientes"
+                    app:layout_constraintStart_toStartOf="@+id/imgBtnClientes"
+                    app:layout_constraintTop_toBottomOf="@+id/imgBtnClientes" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="Calcular Prestamos"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgBtnCash"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtnCash"
+                    app:layout_constraintHorizontal_bias="0.508"
+                    app:layout_constraintStart_toEndOf="@+id/imgBtnClientes"
+                    app:layout_constraintTop_toBottomOf="@+id/imgBtnCash"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imgBtnSecurity"
+                    android:layout_width="202dp"
+                    android:layout_height="66dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/secure_men" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnInfo"
+                    android:layout_width="205dp"
+                    android:layout_height="66dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imgBtnSecurity"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/info_men" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="Seguridad"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgBtnSecurity"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtnSecurity"
+                    app:layout_constraintHorizontal_bias="0.506"
+                    app:layout_constraintStart_toStartOf="@+id/imgBtnSecurity"
+                    app:layout_constraintTop_toBottomOf="@+id/imgBtnSecurity" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="Información"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgBtnInfo"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtnInfo"
+                    app:layout_constraintStart_toEndOf="@+id/imgBtnSecurity"
+                    app:layout_constraintTop_toBottomOf="@+id/imgBtnInfo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
