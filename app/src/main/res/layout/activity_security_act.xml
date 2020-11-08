@@ -21,12 +21,12 @@
         app:srcCompat="@drawable/candado" />
 
     <TextView
-        android:id="@+id/tvPrestamo"
+        android:id="@+id/textViewCifrado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:layout_marginBottom="210dp"
-        android:hint="Prestamo"
+        android:hint="Cifrado"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
