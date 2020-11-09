@@ -45,16 +45,16 @@ public class Security_act extends AppCompatActivity {
     }
 
     public void cifrar() throws Exception {
-            KeyGenerator keyGenerator = KeyGenerator.getInstance(AES);
-            keyGenerator.init(128);
-            SecretKey secretKey = keyGenerator.generateKey();
-            byte[] bytes = secretKey.getEncoded();
-            SecretKeySpec secretKeySpec = new SecretKeySpec(bytes, AES);
-            Cipher cipher = Cipher.getInstance(AES);
-            cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
+        KeyGenerator keyGenerator = KeyGenerator.getInstance(AES);
+        keyGenerator.init(128);
+        SecretKey secretKey = keyGenerator.generateKey();
+        byte[] bytes = secretKey.getEncoded();
+        SecretKeySpec secretKeySpec = new SecretKeySpec(bytes, AES);
+        Cipher cipher = Cipher.getInstance(AES);
+        cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
 
-            String mmensaje = mensaje.getText().toString();
-            byte[] ccifrado = cipher.doFinal(mmensaje.getBytes());
-            cifrado.setText(ccifrado.toString());
+        String mmensaje = mensaje.getText().toString();
+        byte[] ccifrado = cipher.doFinal(mmensaje.getBytes());
+        cifrado.setText(ccifrado.toString());
     }
 }

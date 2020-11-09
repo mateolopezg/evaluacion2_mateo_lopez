@@ -10,6 +10,8 @@ import android.widget.ViewFlipper;
 
 import com.google.android.gms.common.api.Api;
 
+import java.util.ArrayList;
+
 public class Home_act extends AppCompatActivity {
 
     private ViewFlipper vf;
@@ -42,7 +44,21 @@ public class Home_act extends AppCompatActivity {
     }
 
     public void Prestamo(View v) {
+
+        ArrayList<String> clientes = new ArrayList<String>();
+        ArrayList<String> creditos = new ArrayList<String>();
+
+        clientes.add("Axel");
+        clientes.add("Roxana");
+        clientes.add("Betzabe");
+        clientes.add("Matías");
+
+        creditos.add("Crédito Hipotecario");
+        creditos.add("Crédito Automotriz");
+
         Intent i = new Intent(this, Prestamo_act.class);
+        i.putExtra("listaClientes", clientes); // preparo el dato que quiero envíar.
+        i.putExtra("listaCreditos", creditos);
         startActivity(i);
     }
 
