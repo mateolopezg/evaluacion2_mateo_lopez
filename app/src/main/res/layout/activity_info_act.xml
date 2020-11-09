@@ -6,41 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".Info_act">
 
+
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        app:cardBackgroundColor="@android:color/background_light"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <VideoView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="291dp"></VideoView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="400dp"
+                android:layout_height="223dp"
+                android:gravity="center"></TextView>
+
+            <ImageButton
+                android:id="@+id/imgBtnMap"
+                android:layout_width="158dp"
+                android:layout_height="129dp"
+                android:layout_gravity="center"
+                android:src="@drawable/location"
+                android:scaleType="centerCrop"
+                android:onClick="Maps"
+                android:background="@android:color/background_light"
+                >
+            </ImageButton>
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <VideoView
-        android:id="@+id/video"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="440dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintBottom_toTopOf="parent"
-        tools:layout_editor_absoluteX="-3dp"></VideoView>
 
-    <TextView
-        android:layout_width="403dp"
-        android:layout_height="256dp"
-        android:id="@+id/textvInfo"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="297dp"></TextView>
 
-    <ImageButton
-        android:id="@+id/imgBtnMap"
-        android:layout_width="143dp"
-        android:layout_height="124dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        >
-    </ImageButton>
 </androidx.constraintlayout.widget.ConstraintLayout>
